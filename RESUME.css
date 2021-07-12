@@ -1,0 +1,40 @@
+	
+body{
+    background: url(https://media.giphy.com/media/eNSVgDsBdaSGajxnkc/giphy.gif);
+    background-size: cover;
+}
+legend{	
+	color: orangered;
+}
+.Information{
+	padding-left: 65rem;
+	padding-top: 1rem;
+	color: orangered;
+
+}
+fieldset{
+	border:1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+legend{
+	font-weight: bold;
+    font-style: italic;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+input,textarea,select{
+	border-radius: 10px;
+}
+::placeholder{
+	font-style: oblique;
+}
+button{
+	font-size: 1rem;
+	margin:2rem 0;
+	background-color: #bb342f;
+	color:white;
+	border-radius: 10px;
+	margin-left: 79rem;
+}

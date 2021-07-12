@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyResume</title>
+    <link href="RESUME.css" rel="stylesheet">
+</head> 
+</head>
+<body>
+    <form id=myResume>
+        <div class="Information">
+            <table>
+                <tr>
+                    <td><img src="man.png" alt="Image not Found" width="20px" height="20px"></td>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name"  placeholder="Name"></td>
+                <tr>
+                    <td><img src="mail0C53A4.png" alt="Image not Found" width="20px" height="20px"></td>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email"  placeholder="Email-id"></td>
+                </tr>
+                <tr>
+                    <td><img src="icons8-github.gif" alt="Image not Found" width="20px" height="20px"></td>
+                    <td><label for="github">Github</label></td>
+                    <td><input type="text" id="github" name="github"  placeholder="Github-id"></td>
+                </tr>
+                <tr>
+                    <td><img src="mobile0C53A4.png" alt="Image not Found" width="20px" height="20px"></td>
+                    <td><label for="phone">Phone number</label></td>
+                    <td><input type="tel" id="phone" name="phone"  placeholder="Mobile number"></td>
+                </tr>
+            </table>
+        </div>
+        <fieldset>
+        <legend>Objective</legend>
+        <label>
+            <textarea id="Objective" name="comments" rows="4" cols="180" placeHolder="Enter the Objective"></textarea>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>Academic Qualification</legend>
+            <table>
+                <tr>
+                    <td><label for="UG">Under Graduation</label></td>
+                    <td><input type="text" id="name" name="college name" placeholder="College Name"></td>
+                    <td><input type="text" id="name" name="Year of Passing" placeholder="Year of Passing"></td>
+                    <td><input type="text" id="name" name="cgpa" placeholder="CGPA"></td>
+                </tr>
+                <tr>
+                    <td><label for="12th">HSC</label></td>
+                    <td><input type="text" id="name" name="school name" placeholder="School Name"></td>
+                    <td><input type="text" id="name" name="Year of Passing" placeholder="Year of Passing"></td>
+                    <td><input type="text" id="name" name="percentage" placeholder="Percentage"></td>
+                </tr>
+                <tr>
+                    <td><label for="10th">SSLC</label></td>
+                    <td><input type="text" id="name" name="schoolname" placeholder="School Name"></td>
+                    <td><input type="text" id="name" name="Year of Passing" placeholder="Year of Passing"></td>
+                    <td><input type="text" id="name" name="percentage" placeholder="Percentage"></td>
+                </tr>
+            </table>
+            </fieldset>
+        <fieldset>
+            <legend>Projects</legend>
+            <label for ="miniproject">Mini Projects
+            <textarea id="miniProjects" name="miniproject" rows="4" cols="180" placeholder="Mini Project Details"></textarea>
+            </label>
+            <label for ="finalproject">Final Projects
+                <textarea id="finalProjects" name="finalproject" rows="4" cols="180" placeholder="Final Project Details"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Technical Skills</legend>
+            <label for ="technical skills">
+                <textarea id="technicalSkills" name="technicalSkills" rows="6" cols="60" placeholder="Technical Skills Details"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Achievements</legend>
+            <label for ="achievements">
+                <textarea id="achievements" name="achievements" rows="4" cols="180" placeholder="Achievements Details"></textarea> 
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Personnel Details</legend>
+            <table>
+                <tr>
+                    <td><label for="fatherName">Father Name</label></td>
+                    <td><input type="text" id="FatherName" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date Of Birth</label></td>
+                    <td><input type="tel" id="dob" name="dob"  placeholder="DD\MM\YYYY"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <select id="gender" name="gender">
+                            <option selected>Select...</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td><label for="language">Language Known</label></td>
+                    <td><input type="text" id="language" name="language"  ></td>
+                </tr>
+            </table>  
+        </fieldset>
+        <button type="submit" onclick="myFunction()" >Submit</button>
+        <script>
+            function myFunction() {
+                document.getElementById("myResume").submit();
+                return alert("YOUR RESUME IS SUBMITTED")
+            }
+        </script>
+    </form>
+</body>
+</html>
